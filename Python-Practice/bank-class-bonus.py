@@ -17,6 +17,7 @@ class BankAccount():
         print("\n Amount Deposited:", amount)
 
     def withdraw(self):
+        print("\n Net Available Balance=",self.balance)
         amount = float(input("Enter amount to be withdrawn: "))
         if self.balance >= amount:
             self.balance -= amount
@@ -34,14 +35,14 @@ class BankAccount():
     def get_total_BankAccount(cls):
         return cls.next_id - 1
 
-Jim = BankAccount('Jim Haff', 50000)
-print(Jim)
-print(Jim)
+Wuilliam = BankAccount('Best babu', 50000)
+print(Wuilliam)
+print(Wuilliam)
 
 
-Jim.deposit()
-Jim.withdraw()
-Jim.display()
+Wuilliam.deposit()
+Wuilliam.withdraw()
+Wuilliam.display()
 
 
 
